@@ -28,7 +28,7 @@ $heading-color: darken(white, 11%);
     text-align: center;
     margin: 0;
     position: relative;
-    top: -50px;
+    top: -3%;
     color: $heading-color;
   }
 
@@ -162,15 +162,16 @@ $heading-color: darken(white, 11%);
     color: white;
     width: 100%;
     background-color: lighten(black,10%);
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: -13%;
     padding: 10px 0;
+    font-size: 0.8rem;
     }
     
-    
-  
+
   }
   footer a {
     text-decoration: underline 2px white;
     color: white;
+
   }
