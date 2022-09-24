@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+$digital-font: orbitron, digital, sans-serif;
+$main-font: "Roboto Mono", sans-serif;
+$main-display-color: darkorange;
+$font-color: white;
+$app-background-color: darken(lightgray, 20%);
+$main-button-color: darken(gray, 14%);
+$heading-color: darken(white, 11%);
+
+#app-background {
+  background-color: $app-background-color;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #project-name {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: -20px;
+    color: $heading-color;
+  }
+
+  #calculator {
+    background-color: black;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 25px 35px auto auto auto;
+    gap: 0px 0px !important;
+    font-family: $main-font;
+    border-radius: 20px;
+    padding: 10px;
+    button {
+      margin: 0;
+      border: 0.5px solid black;
+      background-color: $main-button-color;
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      &:hover {
+        color: black;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    #display,
+    #main-display {
+      color: black;
+      background-color: white;
+      text-align: right;
+      font-family: $digital-font;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    #main-display {
+      font-size: 0.9rem;
+      color: $main-display-color;
+      padding-right: 6px;
+      border-radius: 5px 5px 0 0;
+    }
+    #display {
+      font-size: 1.1rem;
+      padding-right: 6px;
+      border-radius: 0 0 5px 5px;
+    }
+
+    #clear {
+      background-color: #f15a2b !important;
+    }
+
+    #equals {
+      background-color: rgb(3, 130, 192) !important;
+    }
+
+    #add,
+    #subtract,
+    #multiply,
+    #divide {
+      background-color: darken(lightgray, 35%) !important;
+    }
+
+    #decimal {
+      font-size: 0rem !important;
+      font-weight: bold;
+      &::before {
+        content: "•";
+        font-size: 1rem;
+      }
+    }
+
+
+    // grid
+    #main-display {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    #display {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    #clear {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    #multiply {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    #divide {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    #add {
+      grid-area: 4 / 4 / span 1 / span 1;
+    }
+    #subtract {
+      grid-area: 5 / 4 / span 1 / span 1;
+    }
+    #equals {
+      grid-area: 6 / 4 / span 2 / span 1;
+    }
+    #zero {
+      grid-area: 7 / 1 / span 1 / span 2;
+    }
+  }
+
+  #developer {
+    text-align: center;
+    color: maroon;
+  }
+  
+  footer {
+      color: white;
+    background-color: lighten(black,10%);
+    position: relative;
+    bottom: 0px;
+    padding: 10px 3px;
+    padding-bottom: 30px;
+    }
+    
+    #attribution > a {
+      text-decoration: none;
+    }
+  
+}
+

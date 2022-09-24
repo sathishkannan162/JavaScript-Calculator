@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+#app-background {
+  background-color: #a0a0a0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#app-background #project-name {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: -20px;
+  color: #e3e3e3;
+}
+#app-background #calculator {
+  background-color: black;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 25px 35px auto auto auto;
+  gap: 0px 0px !important;
+  font-family: "Roboto Mono", sans-serif;
+  border-radius: 20px;
+  padding: 10px;
+}
+#app-background #calculator button {
+  margin: 0;
+  border: 0.5px solid black;
+  background-color: #5c5c5c;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+#app-background #calculator button:hover {
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#app-background #calculator #display,
+#app-background #calculator #main-display {
+  color: black;
+  background-color: white;
+  text-align: right;
+  font-family: orbitron, digital, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+#app-background #calculator #main-display {
+  font-size: 0.9rem;
+  color: darkorange;
+  padding-right: 6px;
+  border-radius: 5px 5px 0 0;
+}
+#app-background #calculator #display {
+  font-size: 1.1rem;
+  padding-right: 6px;
+  border-radius: 0 0 5px 5px;
+}
+#app-background #calculator #clear {
+  background-color: #f15a2b !important;
+}
+#app-background #calculator #equals {
+  background-color: rgb(3, 130, 192) !important;
+}
+#app-background #calculator #add,
+#app-background #calculator #subtract,
+#app-background #calculator #multiply,
+#app-background #calculator #divide {
+  background-color: #7a7a7a !important;
+}
+#app-background #calculator #decimal {
+  font-size: 0rem !important;
+  font-weight: bold;
+}
+#app-background #calculator #decimal::before {
+  content: "•";
+  font-size: 1rem;
+}
+#app-background #calculator #main-display {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+#app-background #calculator #display {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+#app-background #calculator #clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#app-background #calculator #multiply {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#app-background #calculator #divide {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#app-background #calculator #add {
+  grid-area: 4/4/span 1/span 1;
+}
+#app-background #calculator #subtract {
+  grid-area: 5/4/span 1/span 1;
+}
+#app-background #calculator #equals {
+  grid-area: 6/4/span 2/span 1;
+}
+#app-background #calculator #zero {
+  grid-area: 7/1/span 1/span 2;
+}
+#app-background #developer {
+  text-align: center;
+  color: maroon;
+}
+#app-background footer {
+  color: white;
+  background-color: #1a1a1a;
+  position: relative;
+  bottom: 0px;
+  padding: 10px 3px;
+  padding-bottom: 30px;
+}
+#app-background #attribution > a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
