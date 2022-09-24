@@ -346,7 +346,7 @@ const ProjectName = () => {
 const Attribution = () => {
   return /*#__PURE__*/(
     React.createElement("footer", { id: "attribution" }, /*#__PURE__*/
-    React.createElement("strong", null, "Attribution"), ": This project is an exact replica of 'A JavaScript Calculator' at Freecodecamp at URL:  ", /*#__PURE__*/
+    React.createElement("strong", null, "Attribution"), ": This project is an exact replica of JavaScript Calculator at Freecodecamp at URL:  ", /*#__PURE__*/
     React.createElement("a", { href: "https://codepen.io/freeCodeCamp/full/wgGVVX" }, "https://codepen.io/freeCodeCamp/full/wgGVVX"), ". This project was done as a part of course work of Front End development libraries course on Freecodecamp."));
 
 

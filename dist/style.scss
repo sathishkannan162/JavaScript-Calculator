@@ -8,6 +8,11 @@ $app-background-color: darken(lightgray, 20%);
 $main-button-color: darken(gray, 14%);
 $heading-color: darken(white, 11%);
 
+* {
+  box-sizing: border-box;
+}
+
+
 #app-background {
   background-color: $app-background-color;
   width: 100%;
@@ -15,12 +20,15 @@ $heading-color: darken(white, 11%);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0%;
+  padding: 0%;
+
 
   #project-name {
     text-align: center;
     margin: 0;
     position: relative;
-    top: -20px;
+    top: -50px;
     color: $heading-color;
   }
 
@@ -148,17 +156,21 @@ $heading-color: darken(white, 11%);
   }
   
   footer {
-      color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
     background-color: lighten(black,10%);
-    position: relative;
+    position: absolute;
     bottom: 0px;
-    padding: 10px 3px;
-    padding-bottom: 30px;
+    padding: 10px 0;
     }
     
-    #attribution > a {
-      text-decoration: none;
-    }
+    
   
-}
-
+  }
+  footer a {
+    text-decoration: underline 2px white;
+    color: white;
+  }
